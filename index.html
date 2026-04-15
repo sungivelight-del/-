@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>獅子型極簡紀律清單</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* A4 紙張樣式 */
+        .a4-container {
+            width: 210mm;
+            height: 297mm;
+            background-color: #000000;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            padding: 40px 50px;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #c9a063; /* 金色邊框 */
+        }
+
+        /* 標題裝飾 */
+        .main-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #c9a063;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 900;
+            color: #ffffff;
+            letter-spacing: 4px;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .sub-title {
+            font-size: 16px;
+            color: #c9a063;
+            font-weight: 500;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+
+        /* 章節樣式 */
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #1a1a1a;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .section-icon {
+            font-size: 24px;
+            margin-right: 15px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            margin: 0;
+            flex-grow: 1;
+        }
+
+        .section-tag {
+            font-size: 12px;
+            font-weight: 700;
+            color: #000000;
+            background-color: #c9a063;
+            padding: 4px 8px;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+
+        /* 列表項目樣式 */
+        .item-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .list-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            background-color: #c9a063;
+            border-radius: 50%;
+        }
+
+        .item-key {
+            font-weight: 700;
+            color: #ffffff;
+            font-size: 16px;
+        }
+
+        .item-desc {
+            font-weight: 400;
+            color: #b0b0b0;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-top: 2px;
+        }
+
+        /* 終極心法特殊樣式 */
+        .mindset-section {
+            background-color: #c9a063;
+            color: #000000;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: auto; /* 推到底部 */
+        }
+
+        .mindset-section .section-title {
+            color: #000000;
+        }
+
+        .mindset-section .item-key {
+            color: #000000;
+        }
+
+        .mindset-section .item-desc {
+            color: #1a1a1a;
+        }
+
+        .mindset-section .list-item::before {
+            background-color: #000000;
+        }
+
+        /* 列印最佳化 */
+        @media print {
+            body {
+                background-color: #ffffff;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .a4-container {
+                box-shadow: none;
+                border: none;
+                width: 210mm;
+                height: 297mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="a4-container">
+        <header class="main-header">
+            <h1 class="main-title">獅子型極簡紀律系統</h1>
+            <p class="sub-title">注意力、槓桿與絕對自由的實踐清單</p>
+        </header>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🦁</span>
+                <h2 class="section-title">每日「獅子型」極簡紀律</h2>
+                <span class="section-tag">Daily</span>
+            </div>
+            <ul class="item-list">
+                <li class="list-item">
+                    <div class="item-key">選擇性無知 (切斷噪音)</div>
+                    <div class="item-desc">拒絕新聞、八卦與無效社交，把大腦的垃圾食品清空。你的注意力是你擁有唯一真正的資產。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">像獅子一樣工作 (拒絕奶牛式瞎忙)</div>
+                    <div class="item-desc">專注時全力衝刺，攻克最難的問題；完成後徹底休息。拒絕一边滑手機一邊工作的中間狀態。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">審問 5000 元的「渴望時薪」</div>
+                    <div class="item-desc">面對選擇問自己：「這件事值得我花每小時 $5000 去做嗎？」。低於此價值，直接外包、請人做或刪除。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">主動創造 &gt; 被動消費</div>
+                    <div class="item-desc">每天安排神聖時間，將想法化為有形產品（程式碼、文章、數位內容）。這是你睡覺時也在跑業務的槓桿。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">維護身體與心智</div>
+                    <div class="item-desc">保持精準飲食。每天冥想 10 分鐘專注呼吸，從混亂思緒中抽離，保持高質量決策的清醒。</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🎯</span>
+                <h2 class="section-title">每季「12 週」衝刺指標</h2>
+                <span class="section-tag">Quarterly</span>
+            </div>
+            <ul class="item-list">
+                <li class="list-item">
+                    <div class="item-key">極度專注單一目標</div>
+                    <div class="item-desc">把一年壓縮成四個 12 週，每個季度只設定「一個」核心目標。像雷射光一樣聚焦，用緊迫感治癒拖延症。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">可持續的高質量健身</div>
+                    <div class="item-desc">每週 2-3 次複合動作訓練（深蹲、硬舉）。把健身當作主動施加的磨難，告訴身體「我們還需要生存」。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">檢視與調整系統</div>
+                    <div class="item-desc">每個季度主動協商一筆帳單或費用。明白多數規則只是博弈的起點，鍛鍊面對衝突和爭取利益的勇氣。</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="section-header">
+                <span class="section-icon">🛡️</span>
+                <h2 class="section-title">每年「反人性」系統防禦</h2>
+                <span class="section-tag">Yearly</span>
+            </div>
+            <ul class="item-list">
+                <li class="list-item">
+                    <div class="item-key">啟動「禁購月」排毒</div>
+                    <div class="item-desc">每年設定一個月，除生存必需品外絕對不買任何東西。是對消費主義和多巴胺的徹底排毒。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">擴充「自由儲備金」</div>
+                    <div class="item-desc">將收入的 20% 自動投資（如標普 500）。這不是用來消費升級，而是買下對討厭事物說「不」的底氣。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">殘酷清理社交圈</div>
+                    <div class="item-desc">定期審視最常接觸的五個人。遠離抱怨、消耗能量的吸血鬼。寧願孤獨，也不要和糟糕的人在一起。</div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section mindset-section">
+            <div class="section-header" style="background-color: transparent; padding: 0;">
+                <span class="section-icon">💡</span>
+                <h2 class="section-title">刻在腦子裡的「納瓦爾終極心法」</h2>
+            </div>
+            <ul class="item-list">
+                <li class="list-item">
+                    <div class="item-key">Hell Yeah or No (非絕對熱愛即拒絕)</div>
+                    <div class="item-desc">面對平庸的機會、邀約或投資，如果你的直覺不是「太棒了！」，那就直接拒絕。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">慾望是主動選擇的痛苦</div>
+                    <div class="item-desc">慾望是你和自己簽訂的契約，承諾在得到它之前你會一直不快樂。減少慾望，立刻獲得平靜。</div>
+                </li>
+                <li class="list-item">
+                    <div class="item-key">財富是副產品，享受過程</div>
+                    <div class="item-desc">把工作變成像玩耍一樣享受，建立無人能及的特殊知識，財富自然會作為副產品湧來。</div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
